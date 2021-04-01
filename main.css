@@ -36,6 +36,24 @@ body {
     vertical-align: middle;
 }
 
+.plan ul {
+    list-style: none;
+}
+
+.plan--highlighted {
+    background-color: #19b84c;
+    color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+    background-color: #fff;
+    color: #19b84c;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 .main-header {
     width: 100%;
     background-color: #2ddf5c;
