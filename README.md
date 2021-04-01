@@ -4,7 +4,7 @@
 
 Web hosting site project for my HTML and CSS learning
 
-This is my very second html and css project website through udemy course i've covered.
+This is my second html and css project website through udemy course i've covered.
 
 **Udemy Course: CSS (include Flexbox, Grid & Sass)**
 
