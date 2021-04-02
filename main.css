@@ -79,6 +79,17 @@ body {
     color: #0e4f1f;
 }
 
+#key-features {
+    background-color: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
 .plan--highlighted {
     background-color: #19b84c;
     color: #fff;
@@ -156,3 +167,4 @@ body {
     background-color: white;
     border: none;
 }
+
