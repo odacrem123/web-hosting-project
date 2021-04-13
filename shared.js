@@ -2,28 +2,36 @@ var backdrop = document.querySelector('.backdrop');
 var modal = document.querySelector('.modal');
 var selectPlanButtons = document.querySelectorAll('.plan button');
 var noAnswerButton = document.querySelector('.modal__action--negative');
-var mobileMenu = document.querySelector('mobile-nav');
-var iconMenuClick = document.querySelector('toggle-button');
-
+var mobileMenu = document.querySelector('.mobile-nav');
+var toggleButtonBar = document.querySelector('.toggle-button');
 
 for (var i= 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener('click', function() {
-    modal.style.display = 'block';
-    backdrop.style.display = 'block';
+    // modal.style.display = 'block';
+    // backdrop.style.display = 'block';
+    modal.classList.add('open');
+    backdrop.classList.add('open');
   });
 }
 
-backdrop.addEventListener('click', closeModal);
+backdrop.addEventListener('click', function() {
+  mobileMenu.classList.remove('open');
+  closeModal();
+});
+
 noAnswerButton.addEventListener('click', closeModal);
 
 function closeModal() {
-  backdrop.style.display = 'none';
-  noAnswerButton.style.display = 'none';
+  backdrop.classList.remove('open');
+  modal.classList.remove('open');
 }
 
-iconMenuClick.addEventListener('click', function() {
-  mobileMenu.style.display = 'block';
+toggleButtonBar.addEventListener('click', function() {
+  mobileMenu.classList.add('open');
+  backdrop.classList.add('open');
 });
+
+
 
 
 
