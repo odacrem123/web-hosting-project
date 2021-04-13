@@ -19,11 +19,16 @@ backdrop.addEventListener('click', function() {
   closeModal();
 });
 
-noAnswerButton.addEventListener('click', closeModal);
+if (noAnswerButton) {
+  noAnswerButton.addEventListener('click', closeModal);
+}
+
 
 function closeModal() {
+    if (modal) {
+      modal.classList.remove('open');
+    }
   backdrop.classList.remove('open');
-  modal.classList.remove('open');
 }
 
 toggleButtonBar.addEventListener('click', function() {
